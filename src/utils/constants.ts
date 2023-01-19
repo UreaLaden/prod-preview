@@ -18,18 +18,18 @@ export const details={
 
 export const Fonts={
     Medium:{
-        fontSize:"1.4rem",
+        fontSize:"1.2vw",
     },
     Large:{
-        fontSize:"2.6rem",
+        fontSize:"2.6vw",
         fontWeight:"700"
     },
     FBold:{
-        fontSize:"2.8rem",
+        fontSize:"2.8vw",
         fontWeight:"700"
     },
     Small:{
-        fontSize:"1.5rem"
+        fontSize:"1.2vw"
 
     }
 }

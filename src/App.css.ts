@@ -14,6 +14,7 @@ export const styles=mergeStyleSets({
     backgroundColor:Colors.PureWhite,
     margin:"0 auto",
     borderRadius:"25px",
+    mindWidth:"100px",
     "@media screen and (min-width:1400px)":{
       height:"60%",
       width:"50%"
@@ -99,7 +100,9 @@ export const styles=mergeStyleSets({
       gridColumn:"1 / -1",
     },
     "@media screen and (max-width:750px)":{
-      gridRow:"1 / 2",
+      gridRow:"2 / 3",
+      fontSize:"4.5vw",
+      letterSpacing:"1.75vw"
     }
   },
   productTitle:{
@@ -114,7 +117,9 @@ export const styles=mergeStyleSets({
       gridColumn:"1 / -1"
     },
     "@media screen and (max-width:750px)":{
-      gridRow:"2 / 3",      
+      gridRow:"3 / 4",   
+      fontSize:"10vw",   
+      lineHeight:"5vh"
     }
   },
  
@@ -131,7 +136,9 @@ export const styles=mergeStyleSets({
       gridColumn:"1 / -1"
     },
     "@media screen and (max-width:750px)":{
-      gridRow:"3 / 6"
+      gridRow:"4 / 6",
+      fontSize:"4vw",
+      lineHeight:"7vw"
     }
   },
   productPrice:{
@@ -146,17 +153,21 @@ export const styles=mergeStyleSets({
       gridColumn:"1 / -1"
     },
     "@media screen and (max-width:750px)":{
-      gridRow:"6 / 7"
+      gridRow:"6 / 7",
     },
   },
   mainPrice:{
-    fontFamily:"Fraunces 9pt SemiBold",
+    fontFamily:"Fraunces",
     ...Fonts.FBold,
     color:Colors.DeepAquamarine,
+    "@media screen and (max-width:750px)":{
+      fontSize:"14vw"
+    },
     
   },
   productButton:{
     backgroundColor:Colors.DeepAquamarine,
+    width:"80vw",    
     borderRadius:"15px",
     ...Fonts.Medium,
     color:Colors.PureWhite,
@@ -173,7 +184,8 @@ export const styles=mergeStyleSets({
       gridColumn:"1 / -1"
     },
     "@media screen and (max-width:750px)":{
-      gridRow:"7 / 8"
+      gridRow:"7 / 8",
+      fontSize:"4vw"
     },
     ":hover":{
       cursor:"pointer",
@@ -186,9 +198,12 @@ export const styles=mergeStyleSets({
     fontWeight:"600",
     textDecoration:'line-through',
     color:'rgba(0,0,0,0.6)',
-    gridColumn:"3 / span 2"
+    gridColumn:"3 / span 2",
+    "@media screen and (max-width:750px)":{
+      fontSize:"4vw"
+    },
   },
   cartIcon:{
-    transform:'scale(1.5)'
+    transform:'scale(1.5)',   
   }
 })
